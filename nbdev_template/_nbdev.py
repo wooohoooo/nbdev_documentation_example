@@ -4,10 +4,12 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"Car": "00_core.ipynb",
          "IMPORTANT_STRING": "00_core.ipynb",
-         "get_car_to_important_location": "01_drive_car.ipynb"}
+         "get_car_to_important_location": "01_drive_car.ipynb",
+         "test_location": "02_tests.ipynb"}
 
 modules = ["core.py",
-           "drive_car.py"]
+           "drive_car.py",
+           "test.py"]
 
 doc_url = "https://fastai.github.io/nbdev_template/"
 
