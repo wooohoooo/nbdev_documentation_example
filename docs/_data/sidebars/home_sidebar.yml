@@ -14,7 +14,7 @@ entries:
       url: /core
     - output: web,pdf
       title: Title
-      url: /drive_car
+      url: /tests
     output: web
     title: nbdev_template
   output: web

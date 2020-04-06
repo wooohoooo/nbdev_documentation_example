@@ -142,6 +142,102 @@ description: "This showcases how great nbdev works!"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="How-to-test">How to test<a class="anchor-link" href="#How-to-test"> </a></h1><p>Testing is pretty simple and straight forward with this:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev_template.test</span> <span class="kn">import</span> <span class="n">test_location</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_location</span><span class="p">(</span><span class="n">get_car_to_important_location</span><span class="p">(</span><span class="n">car</span><span class="p">,</span><span class="n">IMPORTANT_STRING</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>drove to Munich
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_location</span><span class="p">(</span><span class="n">car</span><span class="o">.</span><span class="n">num_wheels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-8-489a4616d12c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>test_location<span class="ansi-blue-fg">(</span>car<span class="ansi-blue-fg">.</span>num_wheels<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/Documents/GitHub Personal/nbdev_documentation_example/nbdev_template/test.py</span> in <span class="ansi-cyan-fg">test_location</span><span class="ansi-blue-fg">(location)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-red-fg"># Cell</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-green-fg">def</span> test_location<span class="ansi-blue-fg">(</span>location<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">assert</span> type<span class="ansi-blue-fg">(</span>location<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> str<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;looks like the locations isnt a string&#39;</span>
+
+<span class="ansi-red-fg">AssertionError</span>: looks like the locations isnt a string</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

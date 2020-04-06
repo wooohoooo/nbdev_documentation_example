@@ -39,3 +39,43 @@ get_car_to_important_location(car,IMPORTANT_STRING)
     'car is now at Munich'
 
 
+
+# How to test
+
+
+Testing is pretty simple and straight forward with this:
+
+
+
+```python
+from nbdev_template.test import test_location
+```
+
+```python
+test_location(get_car_to_important_location(car,IMPORTANT_STRING)) 
+```
+
+    drove to Munich
+
+
+```python
+test_location(car.num_wheels)
+```
+
+
+    ---------------------------------------------------------------------------
+
+    AssertionError                            Traceback (most recent call last)
+
+    <ipython-input-8-489a4616d12c> in <module>
+    ----> 1 test_location(car.num_wheels)
+    
+
+    ~/Documents/GitHub Personal/nbdev_documentation_example/nbdev_template/test.py in test_location(location)
+          5 # Cell
+          6 def test_location(location):
+    ----> 7     assert type(location) == str, 'looks like the locations isnt a string'
+    
+
+    AssertionError: looks like the locations isnt a string
+
